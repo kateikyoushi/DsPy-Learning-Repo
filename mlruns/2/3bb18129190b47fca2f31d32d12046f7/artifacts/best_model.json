@@ -1,0 +1,161 @@
+{
+  "react": {
+    "lm": null,
+    "traces": [],
+    "train": [],
+    "demos": [
+      {
+        "augmented": true,
+        "question": "What programming language was created by Guido van Rossum?",
+        "trajectory": "",
+        "next_thought": "To answer this question, we need to find information about the programming language created by Guido van Rossum. Guido van Rossum is known for creating the Python programming language.",
+        "next_tool_name": "search_wikipedia",
+        "next_tool_args": {
+          "query": "Guido van Rossum programming language"
+        }
+      },
+      {
+        "augmented": true,
+        "question": "When was Python first released?",
+        "trajectory": "[[ ## thought_0 ## ]]\nTo answer this question, we need to find information about the initial release of Python.\n\n[[ ## tool_name_0 ## ]]\nsearch_wikipedia\n\n[[ ## tool_args_0 ## ]]\n{\"query\": \"Python programming language release date\"}\n\n[[ ## observation_0 ## ]]\n[1] \u00abPython is a high-level programming language created by Guido van Rossum in 1991.\u00bb\n[2] \u00abPython emphasizes code readability with significant whitespace and supports multiple programming paradigms.\u00bb\n[3] \u00abPython is widely used in web development, data science, and machine learning.\u00bb",
+        "next_thought": "The release date of Python is mentioned in the first passage from Wikipedia as 1991.",
+        "next_tool_name": "finish",
+        "next_tool_args": {
+          "answer": "1991"
+        }
+      },
+      {
+        "augmented": true,
+        "question": "What is a subset of AI that learns from data?",
+        "trajectory": "",
+        "next_thought": "To answer this question, I need to find information about a subset of AI that learns from data. This sounds like machine learning, which is a field of study that gives computers the ability to learn without being explicitly programmed.",
+        "next_tool_name": "search_wikipedia",
+        "next_tool_args": {
+          "query": "machine learning"
+        }
+      },
+      {
+        "augmented": true,
+        "question": "Who designed the Eiffel Tower?",
+        "trajectory": "",
+        "next_thought": "To answer the question of who designed the Eiffel Tower, we need to find information about the Eiffel Tower's designer.",
+        "next_tool_name": "search_wikipedia",
+        "next_tool_args": {
+          "query": "Eiffel Tower designer"
+        }
+      },
+      {
+        "question": "What is Einstein's famous equation?",
+        "answer": "E=mc\u00b2"
+      },
+      {
+        "question": "What year was Albert Einstein born?",
+        "answer": "1879"
+      },
+      {
+        "question": "Where is the Eiffel Tower located?",
+        "answer": "Paris"
+      }
+    ],
+    "signature": {
+      "instructions": "Given the fields `question`, produce the fields `answer`.\n\nYou will be given `question` and your goal is to finish with `answer`.\n\nTo do this, you will interleave Thought, Tool Name, and Tool Args, and receive a resulting Observation.\n\nThought can reason about the current situation, and Tool Name can be the following types:\n\n(1) search_wikipedia, whose description is <desc>  Search Wikipedia for relevant passages.  Returns top 3 most relevant text passages.    Args:      query: Search query string    Returns:      List of relevant text passages from Wikipedia  <\/desc>. It takes arguments {'query': {'type': 'string'}} in JSON format.\n(2) finish, whose description is <desc>Signals that the final outputs, i.e. `answer`, are now available and marks the task as complete.<\/desc>. It takes arguments {'kwargs': 'Any'} in JSON format.",
+      "fields": [
+        {
+          "prefix": "Question:",
+          "description": "${question}"
+        },
+        {
+          "prefix": "Trajectory:",
+          "description": "${trajectory}"
+        },
+        {
+          "prefix": "Next Thought:",
+          "description": "${next_thought}"
+        },
+        {
+          "prefix": "Next Tool Name:",
+          "description": "${next_tool_name}"
+        },
+        {
+          "prefix": "Next Tool Args:",
+          "description": "${next_tool_args}"
+        }
+      ]
+    }
+  },
+  "extract.predict": {
+    "lm": null,
+    "traces": [],
+    "train": [],
+    "demos": [
+      {
+        "augmented": true,
+        "question": "What programming language was created by Guido van Rossum?",
+        "trajectory": "[[ ## thought_0 ## ]]\nTo answer this question, we need to find information about the programming language created by Guido van Rossum. Guido van Rossum is known for creating the Python programming language.\n\n[[ ## tool_name_0 ## ]]\nsearch_wikipedia\n\n[[ ## tool_args_0 ## ]]\n{\"query\": \"Guido van Rossum programming language\"}\n\n[[ ## observation_0 ## ]]\n[1] \u00abPython is a high-level programming language created by Guido van Rossum in 1991.\u00bb\n[2] \u00abPython emphasizes code readability with significant whitespace and supports multiple programming paradigms.\u00bb\n[3] \u00abPython is widely used in web development, data science, and machine learning.\u00bb\n\n[[ ## thought_1 ## ]]\nThe information from Wikipedia confirms that Guido van Rossum created the Python programming language. We can now provide the answer to the question.\n\n[[ ## tool_name_1 ## ]]\nfinish\n\n[[ ## tool_args_1 ## ]]\n{\"answer\": \"Python\"}\n\n[[ ## observation_1 ## ]]\nFailed to execute: Arg answer is not in the tool's args.",
+        "reasoning": "The question asks about the programming language created by Guido van Rossum. According to the information from Wikipedia, Guido van Rossum created the Python programming language in 1991. This information confirms that the programming language created by Guido van Rossum is indeed Python.",
+        "answer": "Python"
+      },
+      {
+        "augmented": true,
+        "question": "When was Python first released?",
+        "trajectory": "[[ ## thought_0 ## ]]\nTo answer this question, we need to find information about the initial release of Python.\n\n[[ ## tool_name_0 ## ]]\nsearch_wikipedia\n\n[[ ## tool_args_0 ## ]]\n{\"query\": \"Python programming language release date\"}\n\n[[ ## observation_0 ## ]]\n[1] \u00abPython is a high-level programming language created by Guido van Rossum in 1991.\u00bb\n[2] \u00abPython emphasizes code readability with significant whitespace and supports multiple programming paradigms.\u00bb\n[3] \u00abPython is widely used in web development, data science, and machine learning.\u00bb\n\n[[ ## thought_1 ## ]]\nThe release date of Python is mentioned in the first passage from Wikipedia as 1991.\n\n[[ ## tool_name_1 ## ]]\nfinish\n\n[[ ## tool_args_1 ## ]]\n{\"answer\": \"1991\"}\n\n[[ ## observation_1 ## ]]\nFailed to execute: Arg answer is not in the tool's args.",
+        "reasoning": "The question requires finding the initial release date of the Python programming language. Using the search_wikipedia tool, we found that Python was created by Guido van Rossum in 1991. Although there was an issue with executing the finish tool, the relevant information was already obtained from the Wikipedia passage.",
+        "answer": "1991"
+      },
+      {
+        "augmented": true,
+        "question": "What is a subset of AI that learns from data?",
+        "trajectory": "[[ ## thought_0 ## ]]\nTo answer this question, I need to find information about a subset of AI that learns from data. This sounds like machine learning, which is a field of study that gives computers the ability to learn without being explicitly programmed.\n\n[[ ## tool_name_0 ## ]]\nsearch_wikipedia\n\n[[ ## tool_args_0 ## ]]\n{\"query\": \"machine learning\"}\n\n[[ ## observation_0 ## ]]\n[1] \u00abMachine learning is a subset of artificial intelligence that enables systems to learn from data.\u00bb\n[2] \u00abCommon machine learning algorithms include decision trees, neural networks, and support vector machines.\u00bb\n[3] \u00abMachine learning is used in recommendation systems, image recognition, and natural language processing.\u00bb\n\n[[ ## thought_1 ## ]]\nThe information from Wikipedia confirms that machine learning is a subset of AI that learns from data. I can now use this information to answer the question.\n\n[[ ## tool_name_1 ## ]]\nfinish\n\n[[ ## tool_args_1 ## ]]\n{\"answer\": \"Machine learning\"}\n\n[[ ## observation_1 ## ]]\nFailed to execute: Arg answer is not in the tool's args.",
+        "reasoning": "The question asks for a subset of AI that learns from data. Based on the information gathered from Wikipedia, it is clear that machine learning is a field of study that enables systems to learn from data, making it a subset of AI that fits the description. The Wikipedia search results confirm this, mentioning that machine learning is used in various applications such as recommendation systems, image recognition, and natural language processing.",
+        "answer": "Machine learning"
+      },
+      {
+        "augmented": true,
+        "question": "Who designed the Eiffel Tower?",
+        "trajectory": "[[ ## thought_0 ## ]]\nTo answer the question of who designed the Eiffel Tower, we need to find information about the Eiffel Tower's designer.\n\n[[ ## tool_name_0 ## ]]\nsearch_wikipedia\n\n[[ ## tool_args_0 ## ]]\n{\"query\": \"Eiffel Tower designer\"}\n\n[[ ## observation_0 ## ]]\n[1] \u00abThe Eiffel Tower is located in Paris, France and was completed in 1889.\u00bb\n[2] \u00abThe tower stands 330 meters tall and was designed by Gustave Eiffel.\u00bb\n[3] \u00abIt was initially criticized but is now one of the most visited monuments in the world.\u00bb\n\n[[ ## thought_1 ## ]]\nThe observation from the Wikipedia search indicates that the Eiffel Tower was designed by Gustave Eiffel, which directly answers the question.\n\n[[ ## tool_name_1 ## ]]\nfinish\n\n[[ ## tool_args_1 ## ]]\n{\"answer\": \"Gustave Eiffel\"}\n\n[[ ## observation_1 ## ]]\nFailed to execute: Arg answer is not in the tool's args.",
+        "reasoning": "The question of who designed the Eiffel Tower was answered by searching Wikipedia for the Eiffel Tower designer. The search results indicated that the tower was designed by Gustave Eiffel, which directly answers the question.",
+        "answer": "Gustave Eiffel"
+      },
+      {
+        "question": "What year was Albert Einstein born?",
+        "answer": "1879"
+      },
+      {
+        "question": "Where is the Eiffel Tower located?",
+        "answer": "Paris"
+      },
+      {
+        "question": "What is Einstein's famous equation?",
+        "answer": "E=mc\u00b2"
+      }
+    ],
+    "signature": {
+      "instructions": "Given the fields `question`, produce the fields `answer`.",
+      "fields": [
+        {
+          "prefix": "Question:",
+          "description": "${question}"
+        },
+        {
+          "prefix": "Trajectory:",
+          "description": "${trajectory}"
+        },
+        {
+          "prefix": "Reasoning: Let's think step by step in order to",
+          "description": "${reasoning}"
+        },
+        {
+          "prefix": "Answer:",
+          "description": "${answer}"
+        }
+      ]
+    }
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.14",
+      "dspy": "2.6.5",
+      "cloudpickle": "3.1"
+    }
+  }
+}
