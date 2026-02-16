@@ -1,0 +1,29 @@
+{
+  "optimization_date": "2026-02-16T14:22:18.324790",
+  "model": "groq/llama-3.1-8b-instant",
+  "optimizer": "MIPROv2",
+  "baseline_performance": {
+    "avg_quality_score": 0.18,
+    "avg_response_time": 0.7016329765319824,
+    "sample_response_length": 192
+  },
+  "optimized_performance": {
+    "avg_quality_score": 0.6599999999999999,
+    "avg_response_time": 1.1465954780578613,
+    "sample_response_length": 981,
+    "optimization_duration_minutes": 0.6389905095100403
+  },
+  "improvements": {
+    "quality_score_gain": 0.4799999999999999,
+    "quality_score_gain_pct": 266.66666666666663,
+    "response_time_reduction_pct": -63.41812833901148
+  },
+  "business_impact": {
+    "tickets_per_day": 1000,
+    "time_saved_per_ticket_minutes": 4.5,
+    "total_hours_saved_per_day": 75.0,
+    "daily_cost_savings_usd": 2250.0,
+    "annual_cost_savings_usd": 821250.0,
+    "roi_multiplier": 821250.0
+  }
+}

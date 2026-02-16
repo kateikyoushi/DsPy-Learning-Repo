@@ -1,0 +1,45 @@
+{
+  "generate_response.predict": {
+    "lm": null,
+    "traces": [],
+    "train": [],
+    "demos": [
+      {
+        "query": "do i need to buy ticket for my 1 year old baby or free",
+        "answer": "Good question! Let me clarify Cebu Pacific's policy for infants and children.\n\n**Age Categories:**\n\n**Infant (0-23 months):**\n\u2705 Can sit on parent's lap (no separate seat)\n\u2705 Must purchase infant ticket\n\ud83d\udcb0 Cost: 10% of adult fare + taxes (~\u20b1500-\u20b11,500)\n\u274c No baggage allowance included\n\n**Child (2-11 years):**\n\u2705 Must have own seat\n\ud83d\udcb0 Cost: Same as adult fare\n\u2705 Full baggage allowance included\n\n**Your 1-Year-Old:**\n- Category: Infant \u2705\n- Needs ticket: YES (\u20b1500-\u20b11,500)\n- Needs own seat: NO (can sit on lap)\n- Option to buy seat: YES (full adult fare)\n\n**How to Book Infant:**\n1. Go to www.cebupacificair.com\n2. During booking, enter passenger details\n3. Select \"Add Infant\" option\n4. Enter infant's birthdate (must be under 2 at travel date)\n5. Infant ticket added automatically\n\n**Important Rules:**\n- 1 infant per 1 adult maximum\n- Must bring birth certificate or passport\n- Infant age counted by travel date (not booking date)\n- If turning 2 during trip, must book as child"
+      },
+      {
+        "query": "what id needed domestic flight manila to davao i dont have passport",
+        "answer": "Don't worry! Passport not needed for domestic flights within the Philippines.\n\n**Valid IDs for Domestic Flights:**\n\n**Government-Issued (Primary IDs):**\n\u2705 Driver's License\n\u2705 UMID (Unified Multi-Purpose ID)\n\u2705 SSS ID\n\u2705 Passport (if you have it)\n\u2705 Voter's ID\n\u2705 PRC ID (Professional Regulation Commission)\n\u2705 Postal ID\n\u2705 National ID (PhilSys)\n\n**School\/Company IDs (Secondary - with other ID):**\n\u26a0\ufe0f School ID (with another ID)\n\u26a0\ufe0f Company ID (with another ID)\n\n**For Minors (Under 18):**\n\u2705 Birth Certificate (PSA copy)\n\u2705 School ID\n\u2705 Baptismal certificate (with parent's ID)\n\n**Requirements:**\n- ID must be valid (not expired)\n- Has photo (if primary ID)\n- Name on ID must match ticket EXACTLY\n\n**Pro Tip:**\nBring 2 IDs to be safe! If one is questioned, you have backup.\n\n**At the Airport:**\n1. Present ID at check-in counter\n2. Agent verifies name matches ticket\n3. Get boarding pass\n4. Show same ID at security and boarding gate\n\nNo passport needed for Manila-Davao! Any government ID works."
+      },
+      {
+        "query": "I booked flight manila to cebu march 15 but need to change to march 18 how much does it cost? I have light fare",
+        "answer": "Thank you for contacting Cebu Pacific. I'll help you change your flight date.\n\n**Your Current Booking:**\n- Route: Manila (MNL) to Cebu (CEB)\n- Original Date: March 15, 2026\n- New Date: March 18, 2026\n- Fare Type: Go Light\n\n**Flight Change Fee Structure:**\n\n**For Go Light Fare:**\n- Flight change fee: \u20b11,400 per passenger per flight segment\n- PLUS fare difference (if new flight is more expensive)\n- Changes allowed up to 4 hours before departure\n\n**Process to Change Your Flight:**\n\n1. **Online (Fastest - 24\/7 available):**\n   - Go to: www.cebupacificair.com \u2192 Manage Booking\n   - Enter booking reference and last name\n   - Click \"Change Flight\"\n   - Select new date: March 18, 2026\n   - System will calculate total fees\n   - Pay via credit\/debit card or online banking\n\n2. **Via Mobile App:**\n   - Open Cebu Pacific app \u2192 My Bookings\n   - Follow same process as website\n\n3. **Via Hotline:**\n   - Call: +63-2-8702-0888 (24\/7)\n   - Have your booking reference ready\n   - Agent will process change and email new itinerary\n\n**Important Notes:**\n- \u26a0\ufe0f Go Light fares do NOT include rebooking. Change fee always applies.\n- \u2705 If you upgrade to Go Plus (\u20b1600), you get 1 free change (just pay fare difference)\n- \ud83d\udca1 Tip: Check if cancelling and rebooking fresh is cheaper (sometimes yes!)\n\n**Estimated Total Cost:**\n- Change fee: \u20b11,400\n- Fare difference: \u20b10 - \u20b12,500 (depends on seat availability)\n- **Likely total: \u20b11,400 - \u20b13,900**\n\nWould you like me to check seat availability and exact pricing for March 18?"
+      }
+    ],
+    "signature": {
+      "instructions": "Given the fields `query`, `reasoning`, and `answer`, generate a clear and concise response to the customer query by following the ChainOfThought approach, considering Cebu Pacific's policies and procedures, and providing personalized support for flight-related issues.",
+      "fields": [
+        {
+          "prefix": "Query:",
+          "description": "${query}"
+        },
+        {
+          "prefix": "Reasoning: Let's think step by step in order to",
+          "description": "${reasoning}"
+        },
+        {
+          "prefix": "Answer:",
+          "description": "${answer}"
+        }
+      ]
+    }
+  },
+  "metadata": {
+    "dependency_versions": {
+      "python": "3.14",
+      "dspy": "2.6.5",
+      "cloudpickle": "3.1"
+    }
+  }
+}
