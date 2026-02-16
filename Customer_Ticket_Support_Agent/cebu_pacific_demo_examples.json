@@ -1,0 +1,47 @@
+[
+  {
+    "ticket_id": "DEMO-001",
+    "customer_query": "hi cant check in online it says booking not found but i have email confirmation flight tomorrow pls help urgent!!!",
+    "issue_category": "web_checkin_issue",
+    "unoptimized_response": "Please check your booking reference and make sure you entered it correctly. Web check-in is available 7 days before your flight. If the problem persists, please contact our hotline.\n\nThank you for choosing Cebu Pacific.",
+    "optimized_response": "I can help you with your web check-in issue. Let me guide you through troubleshooting steps:\n\n**Step 1: Verify Your Booking Reference**\n- Check your confirmation email for the 6-character booking reference (e.g., ABC123)\n- Ensure you're using the BOOKING REFERENCE, not the ticket number\n\n**Step 2: Common Web Check-in Issues:**\n- **Issue**: \"Booking not found\"\n  - **Solution**: Try entering your booking reference in ALL CAPS\n  - **Solution**: Remove any spaces before/after the booking reference\n  - **Solution**: If booked through a travel agency, check-in may not be available online (contact them directly)\n\n**Step 3: Check-in Window**\n- Domestic flights: Opens 7 days before departure, closes 1 hour before\n- International flights: Opens 7 days before departure, closes 4 hours before\n- If outside this window, web check-in won't work\n\n**Step 4: Alternative Solutions:**\n- Use the Cebu Pacific mobile app (often works when website doesn't)\n- Contact us at: +63-2-8702-0888 (24/7 hotline)\n- Check in at airport counter (arrive 2 hours early for domestic, 3 hours for international)\n\n**If Still Not Working:**\nPlease provide:\n1. Your booking reference\n2. Flight number and date\n3. Screenshot of the error message\n\nI'll manually verify your booking and assist further.\n\n**Estimated Time to Resolve**: 5-10 minutes",
+    "improvement_metrics": {
+      "before_response_time": "5 minutes",
+      "after_response_time": "30 seconds",
+      "before_resolution_rate": "30%",
+      "after_resolution_rate": "85%",
+      "customer_satisfaction_before": "2.1/5",
+      "customer_satisfaction_after": "4.6/5"
+    }
+  },
+  {
+    "ticket_id": "DEMO-002",
+    "customer_query": "NEED REFUND NOW! flight cancelled by airline not me i want full refund how long???? 5j 123 feb 20",
+    "issue_category": "refund_request",
+    "unoptimized_response": "We apologize for the inconvenience. For airline-cancelled flights, you are entitled to a refund. Please submit a refund request through our website or contact our customer service. Refunds typically take 30-45 business days to process.\n\nThank you for your patience.",
+    "optimized_response": "I understand your frustration. Let me help you with your refund for the airline-cancelled flight.\n\n**Your Flight Details:**\n- Flight: 5J 123\n- Date: February 20, 2026\n- Cancellation: By airline (you're entitled to FULL refund)\n\n**Refund Process for Airline-Cancelled Flights:**\n\n**Option 1: FULL REFUND (Recommended if you don't need to travel)**\n\n**Processing Time:**\n- Credit/Debit Card: 30-45 business days (from refund request approval)\n- Online Banking: 30-45 business days\n- Cash: 7-10 business days (pick up at Cebu Pacific office)\n\n**How to Request:**\n\n1. **Online Portal (Fastest):**\n   - Go to: www.cebupacificair.com → Refunds\n   - Enter booking reference\n   - Select \"Full Refund\" \n   - Upload required documents:\n     * Cancellation email from Cebu Pacific\n     * Valid ID\n     * Booking confirmation\n   - Submit request\n\n2. **Email:**\n   - Send to: customer.care@cebupacificair.com\n   - Subject: \"Refund Request - Flight 5J 123 - [Your Booking Reference]\"\n   - Include:\n     * Booking reference\n     * Passenger names\n     * Cancellation email\n     * Preferred refund method\n     * Bank account details (if applicable)\n\n3. **Hotline:**\n   - Call: +63-2-8702-0888\n   - Say \"Refund request\" to get directed to right department\n\n**Option 2: REBOOKING (Travel Credits - Immediate)**\n- Get travel credits valid for 1 year\n- No expiry fees\n- Use for any Cebu Pacific flight\n- Can be used immediately\n\n**What You'll Get Back:**\n✅ Full base fare\n✅ Taxes and fees\n✅ Add-ons (baggage, meals, seats)\n✅ **TOTAL: 100% of what you paid**\n\n**Next Steps:**\n1. Submit refund request TODAY to start the clock\n2. Save your booking reference: [Your Reference]\n3. Check your email in 3-5 days for refund approval notice\n4. Refund will be credited in 30-45 days\n\nWould you like me to send you the direct refund form link?",
+    "improvement_metrics": {
+      "before_response_time": "6 minutes",
+      "after_response_time": "45 seconds",
+      "before_resolution_rate": "25%",
+      "after_resolution_rate": "90%",
+      "customer_satisfaction_before": "1.8/5",
+      "customer_satisfaction_after": "4.7/5"
+    }
+  },
+  {
+    "ticket_id": "DEMO-003",
+    "customer_query": "how much baggage allowed? going manila to singapore next week i have 2 bags 20kg each",
+    "issue_category": "baggage_inquiry",
+    "unoptimized_response": "Cebu Pacific baggage allowance depends on your fare type. Go Light has no free checked baggage. Go Plus includes 20kg. You can purchase additional baggage online. Please visit our website for more information.\n\nThank you.",
+    "optimized_response": "Let me clarify Cebu Pacific's baggage allowance for your Manila to Singapore flight.\n\n**Your Flight: Manila (MNL) to Singapore (SIN) - International**\n\n**Standard Baggage Allowance by Fare Type:**\n\n**Cabin Baggage (FREE for all fares):**\n✅ 1 hand-carry bag: Max 7 kg\n✅ Max dimensions: 56cm x 36cm x 23cm\n✅ PLUS 1 personal item (laptop bag, purse, etc.)\n\n**Checked Baggage (Depends on your fare):**\n\n**If you have Go Light fare:**\n❌ NO free checked baggage\n💰 Must purchase baggage allowance separately\n\n**If you have Go Plus fare:**\n✅ 20 kg checked baggage included FREE\n\n**If you have Go Premium fare:**\n✅ 40 kg checked baggage included FREE\n\n**Your Situation: 2 bags × 20 kg = 40 kg total**\n\n**Cost to Add Baggage:**\n\n**Option 1: Pre-purchase Online (CHEAPEST)**\n- 20 kg: SGD 35 (~₱1,600) per flight segment\n- 40 kg: SGD 65 (~₱2,960) per flight segment\n- Book at: www.cebupacificair.com → Manage Booking → Add Baggage\n\n**Option 2: At Airport (MORE EXPENSIVE)**\n- 20 kg: SGD 55 (~₱2,500) per flight segment\n- 40 kg: SGD 95 (~₱4,320) per flight segment\n\n**💡 Pro Tip: Save 43% by booking online NOW!**\n\n**Important Rules:**\n- Each bag must not exceed 32 kg individually (for safety)\n- Your 2 bags at 20 kg each = ✅ ALLOWED (within single-bag limit)\n- Overweight fee if you exceed: SGD 20 per kg (~₱910/kg)\n\n**Recommendation for Your Trip:**\nSince you have 40 kg total, I recommend:\n- Purchase 40 kg allowance online: ~₱2,960\n- Or split into 2 passengers if traveling together (20 kg each)\n\nWould you like me to check the exact price for your specific booking?",
+    "improvement_metrics": {
+      "before_response_time": "4 minutes",
+      "after_response_time": "35 seconds",
+      "before_resolution_rate": "40%",
+      "after_resolution_rate": "88%",
+      "customer_satisfaction_before": "2.5/5",
+      "customer_satisfaction_after": "4.8/5"
+    }
+  }
+]
