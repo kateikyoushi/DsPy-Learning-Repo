@@ -1,0 +1,19 @@
+STEP 1: Show the Problem
+  → Display real messy support ticket
+  → Run unoptimized agent (generic, unhelpful response)
+  → Time: 5 minutes, Accuracy: 30%
+
+STEP 2: Show DSPy Optimization
+  → Load 50 past tickets with good resolutions
+  → Run MIPROv2 optimization (3-5 minutes)
+  → Show optimized instructions + few-shot examples
+
+STEP 3: Show the Results
+  → Re-run same ticket with optimized agent
+  → Detailed, step-by-step solution with code snippets
+  → Time: 30 seconds, Accuracy: 85%
+
+STEP 4: Show Business Impact
+  → Calculate: 1000 tickets/day × 4.5 min saved = 75 hours/day
+  → 75 hours × $30/hour = $2,250/day = $821K/year savings
+  → ROI: Infinite (optimization costs ~$1)
