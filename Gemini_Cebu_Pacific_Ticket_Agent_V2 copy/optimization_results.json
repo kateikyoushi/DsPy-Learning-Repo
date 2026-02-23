@@ -1,0 +1,44 @@
+{
+  "optimization_date": "2026-02-23T17:04:04.511326",
+  "model_flash": "gemini/gemini-3-flash-preview",
+  "model_pro": "gemini/gemini-3-pro-preview",
+  "optimizer": "MIPROv2",
+  "optimizer_mode": "medium",
+  "dataset": {
+    "training_examples": 626,
+    "validation_examples": 157,
+    "training_used": 60,
+    "validation_used": 20,
+    "eval_held_out": "valset[20:40]"
+  },
+  "baseline_performance": {
+    "avg_quality_score": 0.48821000000000003,
+    "min_score": 0.205,
+    "max_score": 0.84,
+    "std_dev": 0.15835038964271608,
+    "avg_response_time_seconds": 6.156663179397583,
+    "sample_response_length": 1627
+  },
+  "optimized_performance_flash": {
+    "avg_quality_score": 0.6391,
+    "min_score": 0.3207,
+    "max_score": 0.92,
+    "std_dev": 0.16721740639060276,
+    "avg_response_time_seconds": 5.374301910400391,
+    "sample_response_length": 1559,
+    "optimization_duration_minutes": 8.171671032905579
+  },
+  "improvements": {
+    "quality_score_gain": 0.15088999999999997,
+    "quality_score_gain_pct": 30.90678191761741,
+    "response_time_reduction_pct": 12.70755352696986
+  },
+  "business_impact": {
+    "tickets_per_day": 1000,
+    "time_saved_per_ticket_minutes": 4.5,
+    "total_hours_saved_per_day": 75.0,
+    "daily_cost_savings_usd": 2250.0,
+    "annual_cost_savings_usd": 821250.0,
+    "roi_multiplier": 821250.0
+  }
+}

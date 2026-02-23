@@ -1,0 +1,43 @@
+{
+  "optimization_date": "2026-02-23T16:15:22.707383",
+  "model": "groq/meta-llama/llama-4-maverick-17b-128e-instruct",
+  "optimizer": "MIPROv2",
+  "optimizer_mode": "medium",
+  "dataset": {
+    "training_examples": 626,
+    "validation_examples": 157,
+    "training_used": 60,
+    "validation_used": 20,
+    "eval_held_out": "valset[20:40]"
+  },
+  "baseline_performance": {
+    "avg_quality_score": 0.26092,
+    "min_score": 0.0,
+    "max_score": 0.6772,
+    "std_dev": 0.18910137651534956,
+    "avg_response_time_seconds": 1.7327990531921387,
+    "sample_response_length": 273
+  },
+  "optimized_performance": {
+    "avg_quality_score": 0.429,
+    "min_score": 0.1425,
+    "max_score": 0.7224,
+    "std_dev": 0.17495276333913679,
+    "avg_response_time_seconds": 0.8443403244018555,
+    "sample_response_length": 517,
+    "optimization_duration_minutes": 2.94734761317571
+  },
+  "improvements": {
+    "quality_score_gain": 0.16808,
+    "quality_score_gain_pct": 64.41821247892075,
+    "response_time_reduction_pct": 51.27303868002332
+  },
+  "business_impact": {
+    "tickets_per_day": 1000,
+    "time_saved_per_ticket_minutes": 4.5,
+    "total_hours_saved_per_day": 75.0,
+    "daily_cost_savings_usd": 2250.0,
+    "annual_cost_savings_usd": 821250.0,
+    "roi_multiplier": 821250.0
+  }
+}
